@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eat and Play DFW</title>
+    <link rel="stylesheet" type="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div class='brand'>Eat and Play</div>
+        </header>
+        <div>
+            <input type="text" class='zip-code-search'>
+            <button class='button button-primary search'>Search</button>
+            <button class='button button-secondary random'>Random Choice</button>
+            <div class='results'></div>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDhbvdw1ZvBdhPI7LahUFVltrqgQLjBGyM",
+    authDomain: "eat-and-play.firebaseapp.com",
+    databaseURL: "https://eat-and-play.firebaseio.com",
+    projectId: "eat-and-play",
+    storageBucket: "eat-and-play.appspot.com",
+    messagingSenderId: "255976506251"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="main.js"></script>
+</html>
